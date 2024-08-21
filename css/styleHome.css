@@ -1,0 +1,7 @@
+/*Folha de estilo da homepage, as estilizações da home vem aqui*/
+/*CSS resets*/
+* {
+    border: 0px;
+    padding: 0px;
+    margin: 0px;
+}
