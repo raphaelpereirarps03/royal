@@ -10,8 +10,12 @@
 <body>
     <main>
         <!-- Nav Bar vem aqui no header-->
+        <div id="fundoCamaro">
+            <img src="./imgs/images/imagens_fundo/yellow-porsche-911-carrera.jpg" alt="Imagem de um camaro" id="fundoCamaroImg">
+        </div>
         <header>
             <nav>
+                <!-- Lista de Links -->
                 <ul>
                     <li>
                         <a href="#"> home </a>
@@ -49,6 +53,66 @@
         Partes que devem estar contidas aqui dentro da container, seguindo o modelo lá do figma: HOME; SOBRE NÓS; SERVIÇOS; DESTAQUE/FROTA/FROTA-SECTIONS (RESPECTIVAMENTE); MARCAS E FOOTER.
         CRIEM AS BRANCHS PARA AS ALTERAÇÕES E CRIAÇÕES DAS PARTES. Vamos tentar deixar comentado pra ficar claro pra todo mundo o que é, como funciona tal parte e etc -->
         <div id="container">
+            <p id="slogan">
+                DESCUBRA O EXTRAORIDNÁRIO
+            </p>
+            <br />
+            <p id="slogan">
+                EXPERIMENTE O <span id="exclusivo">EXCLUSIVO</span>
+            </p>
+
+            <fieldset>
+                <form>
+                    <div>
+
+                        <label for="local">
+                            Local
+                        </label>
+                        <br />
+                        <input type="text" placeholder="Local" name="local" maxlength="200" id="inputLocal" >
+                    </div>
+
+                    <div>
+
+                        <label for="localRetirada">
+                            Local de Retirada
+                        </label>
+    
+                        <br />
+    
+                        <input type="text" placeholder="Local de Retirada" name="localRetirada" maxlength="200" id="inputLocalRetirada" >
+                    </div>
+                    <div>
+
+                        <label for="data">
+                            Data
+                        </label>
+                        
+                        <br />
+                        
+                        <input type="date" placeholder="dd/mm/aa" name="data" maxlength="200" id="data" >
+                    </div>
+
+                    <div>
+
+                        <label for="dataRetirada">
+                            Data de Retirada
+                        </label>
+                        
+                        <br />
+                        
+                        <input type="date" placeholder="Data de Retirada" name="dataRetirada" maxlength="200" id="dataRetirada" >
+                    </div>
+                    
+
+                    
+
+                    <button type="submit" id="procurar">
+                        Procurar
+                    </button>
+
+                </form>
+            </fieldset>
 
 
         </div>
