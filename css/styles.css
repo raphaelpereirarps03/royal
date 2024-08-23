@@ -1,0 +1,127 @@
+/* Estilização geral */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('../imgs/images/imagens_fundo/yellow-porsche-911-carrera.jpg') no-repeat center center/cover;
+    font-family: 'Arial', sans-serif;
+    position: relative;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2); /* Ajuste o valor de 0.5 para aumentar ou diminuir a escuridão */
+    z-index: 1;
+}
+
+body * {
+    position: relative;
+    z-index: 2; /* Isso garante que o conteúdo fique acima da sobreposição escura */
+}
+
+/* Container de login */
+.login-container {
+    background: rgba(68, 68, 68, 0.7); /* Fundo mais escuro com transparência */
+    padding: 40px 30px;
+    border-radius: 15px;
+    width: 350px;
+    text-align: center;
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.5); /* Sombra para efeito de elevação */
+    border: solid 2px #cac9c9;
+    backdrop-filter: blur(5px); /* Efeito de desfoque de fundo */
+}
+
+h2 {
+    margin-bottom: 30px;
+    font-size: 24px;
+    color: #f1f1f1;
+}
+
+/* Estilização dos inputs */
+.input-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    outline: none;
+    background: rgba(206, 201, 201, 0.9); /* Fundo branco com leve transparência */
+    font-size: 16px;
+    color: #333;
+    box-sizing: border-box;
+}
+
+.input-group input:focus {
+    border-color: #f0c14b; /* Cor de destaque ao focar */
+}
+
+/* Ícone para mostrar/ocultar senha */
+.toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #333;
+}
+
+/* Link "Esqueci minha senha" */
+.forgot-password {
+    margin-bottom: 20px;
+}
+
+.forgot-password a {
+    color: #f0c14b;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+/* Botão de login */
+button {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    background-color: #f0c14b;
+    color: #333;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #e6b800; /* Mudança de cor ao passar o mouse */
+}
+
+/* Link de registro */
+.register-link {
+    margin-top: 20px;
+}
+
+.register-link p {
+    font-size: 14px;
+    color: #f1f1f1;
+}
+
+.register-link a {
+    color: #f0c14b;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.register-link a:hover {
+    text-decoration: underline; /* Sublinhado ao passar o mouse */
+}
