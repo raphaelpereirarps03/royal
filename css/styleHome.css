@@ -19,6 +19,7 @@ body{
     height: 100vh; 
     overflow-x: hidden;
     
+    
 }
 
 main {
@@ -88,6 +89,7 @@ ul li a, #royalLogo, #searchCarrinhoImg, #conectar, #cadastro, #saibaMais, #chec
     display: flex;
     align-items: center;
     width: 50%;
+    
 }
 
 
@@ -149,7 +151,7 @@ ul li a, #royalLogo, #searchCarrinhoImg, #conectar, #cadastro, #saibaMais, #chec
 
 /* Estilo para o fieldset */
 fieldset {
-    margin-top: 5%;
+    margin-top: 10%;
     background-color: #000;
     border: 4px solid transparent; 
     border-radius: 10px;
@@ -158,7 +160,7 @@ fieldset {
     border-image: linear-gradient(30deg, #fff, #E0b604, #000) 1; 
     display: flex;
     flex-direction: column; /*Alinha os componentes em coluna */
-    width: 50%;
+    width: 40%;
     position: relative; /*Permite posicionar o fieldset no lado direito da página */
     float: right;
 } 
@@ -206,7 +208,96 @@ input {
 .containerConteudo {
     clear: both;
     /* border: 2px #fff solid; */
-    margin-top: 30%;
+    margin-top: 33%;
+    text-align: center;
+ 
+    width: 100%;
+}
+
+
+.diferencial-titulo, h2#link{
+    font-family: "Orbitron", sans-serif;
+    font-size: 3rem;
+
+    /* margin-bottom: 5%; */
+}
+
+.diferenciais{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    margin-bottom: 10%;
+}
+
+.diferencial{
+
+    max-width: 350px;
+    margin: 0 60px;
+}
+
+.diferencial, img{
+    width: 50%;
+    margin-top: 40px;
+    /* margin-bottom: 20px; */
+}
+
+.diferencial, h3{
+    color: #ffc400;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+h3#link{
+    font-family: "League Spartan", sans-serif;
+    
+  }
+
+.diferencial, p#link{
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.diferencial, p{
+    font-size: 1rem;
+    color: #ffff;
+}
+
+.read-more{
+    font-family: "Plus Jakarta Sans", sans-serif;
+    background-color: black;
+    border: 2px solid #FFD700;
+    color: white;
+    padding: 10px 50px;
+    margin-bottom: 170px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s ease, color 0.3s ease;
+    box-shadow: 0 0 30px #FFD700;
+}
+
+.read-more:hover {
+    background-color: #FFD700;
+    color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+.containerConteudo2 {
+    clear: both;
+    /* border: 2px #fff solid; */
+    margin-top: 0%;
+    text-align: center;
 }
 
 .container #marcas{
