@@ -1,56 +1,56 @@
 /*Folha de estilo da homepage, as estilizações da home vem aqui*/
 /*CSS resets*/
-* {
+/* * {
     padding: 0px;
     border: 0px;
     margin: 0px;
     position: relative;
-    /* border: 1px solid; */
-    /* background-color: #c5dbf2; */
+    border: 1px solid;
+    background-color: #c5dbf2;
     text-decoration: none;
     color: #FFF;
     font-family: Arial, Helvetica, sans-serif;
-}
+} */
 
-body{
-    /* background-color: aqua; */
+/* body{
+    background-color: aqua;
     background-color: #000; 
     
-}
+} */
 
-main {
-    /* background-color: antiquewhite; */
+/* main {
+    background-color: antiquewhite;
     position: relative;
     margin: auto;
 
-}
+} */
 
-header {
+/* header {
     margin-bottom: 5%;
-}
+} */
 
-#fundoCamaro {
+/* #fundoCamaro {
     position: absolute;
     width: 100%;
     height: auto;
     z-index: -1;
-}
+} */
 
-#fundoCamaroImg {
+/* #fundoCamaroImg {
     width: 100%;
     height: 580px;
     object-fit: cover;
-}
+} */
 
-nav {
-    /* background-color: burlywood; */
+/* nav {
+    background-color: burlywood;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-}
-ul {
-    /* background-color: yellowgreen; */
+} */
+/* ul {
+    background-color: yellowgreen;
     display: flex;
     list-style: none;
     justify-content: space-between;
@@ -58,84 +58,84 @@ ul {
     width: 25%;
 
 
-}
+} */
 
-ul li {
+/* ul li {
     color: #2d2c2f;
 
 
-}
+} */
 
-ul li a, #royalLogo, #searchCarrinhoImg, #conectar, #cadastro, #saibaMais, #checkout{
+/* ul li a, #royalLogo, #searchCarrinhoImg, #conectar, #cadastro, #saibaMais, #checkout{
     transition: transform 0.5s ease;
     cursor: pointer;
     display: inline-block; 
 
-}
+} */
 
- ul li a:hover, #royalLogo:hover, #searchCarrinhoImg:hover, #conectar:hover, #cadastro:hover, #saibaMais:hover, #checkout:hover {
-    transform: scale(1.2); /*Aumenta em 30%*/
+ /* ul li a:hover, #royalLogo:hover, #searchCarrinhoImg:hover, #conectar:hover, #cadastro:hover, #saibaMais:hover, #checkout:hover {
+    transform: scale(1.2); Aumenta em 30%
     transform-origin: center;
-}
+} */
 
-#royalLogo {
+/* #royalLogo {
     margin-top: 1%;
     height: 65px;
     width: 200px;
-    object-fit: cover; /*melhora a qualidade da imagem*/
-}
+    object-fit: cover; 
+} */
 
 
 
-#botoes {
+/* #botoes {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     width: 20%;
 
-}
+} */
 
-#conectar {
+/* #conectar {
     background: none;
     padding: 8px 35px 8px 35px;
     border: 3px solid;
     border-radius: 15px;
 
     
-}
+} */
 
-#cadastro {
+/* #cadastro {
     background-color: #E0b604;
     padding: 5px 20px 5px 20px;
     border-radius: 15px;
 
-}
+} */
 
-#cadastro a {
+/* #cadastro a {
     color: #000000;
     font-weight: bold;
-}
+} */
 
-#container {
+/* #container {
     padding: 10px;
-}
+} */
 
-#slogan{
+/* #slogan{
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 40px;
     margin-left: 5%;
-    /* font-weight: bold; */
-}
+    font-weight: bold;
+} */
 
-#exclusivo {
+/* #exclusivo {
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 40px;
     color: #E0b604;
-}
+} */
 
 
 /* Estilo para o fieldset */
-fieldset {
+/* fieldset {
     margin-top: 5%;
     background-color: #000;
     border: 4px solid transparent; 
@@ -144,41 +144,41 @@ fieldset {
     box-sizing: border-box; 
     border-image: linear-gradient(30deg, #fff, #E0b604, #000) 1; 
     display: flex;
-    flex-direction: column; /* Alinha os componentes em coluna */
+    flex-direction: column; Alinha os componentes em coluna
     width: 50%;
-    position: absolute; /* Permite posicionar o fieldset no lado direito da página */
-    right: 0; /* Alinha o fieldset ao lado direito */
-}
+    position: absolute; Permite posicionar o fieldset no lado direito da página
+    right: 0; Alinha o fieldset ao lado direito
+} */
 
 
-form {
+/* form {
 
     display: flex;
     flex-wrap: wrap; 
     gap: 10px; 
     width: 100%; 
-}
+} */
 
-
+/* 
 form div {
     flex: 1 1 150px; 
     box-sizing: border-box; 
-}
-label {
+} */
+/* label {
     display: block; 
 
     font-weight: bold;
-}
-input {
+} */
+/* input {
     width: 100%; 
     padding: 0.5em; 
     box-sizing: border-box; 
     border-radius: 5px;
     color: #000;
     border: 3px #E0b604 solid;
-}
+} */
 
-#procurar {
+/* #procurar {
     align-self: flex-end; 
     background-color: #E0b604; 
     color: #000; 
@@ -189,36 +189,36 @@ input {
     border-radius: 5px; 
     cursor: pointer; 
     margin-top: 10px; 
-}
+} */
 
-body #marcas{
+/* body #marcas{
     display: flex;
     clear: left;
     flex-wrap: wrap;
     margin-top: 1000px;
     border: 2px solid;
     border-color: blueviolet;
-}
+} */
 
-#marcas.texto {
+/* #marcas.texto {
     width: 100%;
      height: 192px; 
     margin-top: 50px;
 
-}
+} */
 
-.texto h1{
+/* .texto h1{
     color: transparent; 
     text-align: center;
     line-height: 70px;
     font-size: 50px;
     font-family: 'Orbitron', sans-serif; 
     background: linear-gradient(to right, #141414, #ffd000); 
-    -webkit-background-clip: text; /* Garante que o gradiente é aplicado ao texto */
+    -webkit-background-clip: text; Garante que o gradiente é aplicado ao texto
     background-clip: text; 
-}
+} */
 
-.texto h3{
+/* .texto h3{
     color: #fff;
     width: 100%;
     text-align: center;
@@ -246,32 +246,32 @@ aside {
     align-items: center; 
     padding: 10px; 
     box-sizing: border-box; 
-}
+} */
 
-.montadoras img {
+/* .montadoras img {
     width: 30%; 
     margin-bottom: 10px; 
-    object-fit: cover; /* Mantém o aspecto das imagens ao redimensionar */
+    object-fit: cover; Mantém o aspecto das imagens ao redimensionar
 }
 
 .botao_container {
     display: flex;
     justify-content: center;
-    margin-top: 40px; /* Espaço entre a class montadoras e o botão */
+    margin-top: 40px; Espaço entre a class montadoras e o botão
 }
 
 .saiba_mais {
     background-color: #000000;
     color: white;
     padding: 15px 30px;
-    /* width: 200px; */
+    width: 200px;
     font-size: 16px;
     cursor: pointer;
     border-radius: 15px;
     border-color: #FFC400;
-    text-transform: uppercase; /* Texto em maiúsculas */
+    text-transform: uppercase; Texto em maiúsculas
 }
 
 .saiba_mais:hover {
     background-color: #585454; 
-} 
+}  */
