@@ -429,3 +429,92 @@ aside {
     justify-content: center;
     margin-top: 40px; 
 }
+
+.sessão-sobre_nos {
+    width: 100%;
+    height: 120vh;
+    background-color: var(--black-color);
+    text-align: center;
+    padding: 40px 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.sessão-sobre_nos h1 {
+    color: transparent; 
+    text-align: center;
+    line-height: 70px;
+    font-size: 50px;
+    font-family: var(--font-subtitles); 
+    background: linear-gradient(to right, #141414, #ffd000); 
+    -webkit-background-clip: text; 
+    background-clip: text; 
+    margin-bottom: 20px;
+}
+
+.sessão-sobre_nos .content1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px; /* Largura máxima para manter o layout proporcional */
+    margin: 0 auto; /* Centraliza o conteúdo principal */
+    gap: 20px; /* Espaço entre a imagem e o texto */
+}
+
+.sessão-sobre_nos #fundo_cinza {
+    width: 477px;
+    height: 244px;
+    border-radius: 15px;
+    background-color: #C3C3C3;
+    position: relative; /* Permite a posição absoluta da imagem */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sessão-sobre_nos #fundo_cinza img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajusta a imagem para cobrir o card */
+    border-radius: 15px;
+}
+
+.sessão-sobre_nos .text {
+    width: 60%;
+    margin-top: 150px;
+}
+
+.sessão-sobre_nos .text h2,
+.sessão-sobre_nos .text p {
+    margin: 0 0 10px 0; /* Espaçamento entre os elementos de texto */
+}
+
+
+.sessão-sobre_nos .read-more {
+    font-family: var(--font-content);
+    background-color: var(--black-color);
+    border: 2px solid var(--yellow-darker);
+    color: white;
+    padding: 10px 50px;
+    margin-bottom: 170px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s ease, color 0.3s ease;
+    box-shadow: 0 0 30px var(--yellow-darker);
+}
+
+.sessão-sobre_nos .read-more:hover {
+    background-color: var(--yellow-darker);
+    color: var(--black-color);
+}
+
