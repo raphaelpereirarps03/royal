@@ -1,236 +1,268 @@
-/*Folha de estilo da homepage, as estilizações da home vem aqui*/
-/*CSS resets*/
+:root{
+    --yellow-darker: #FFC400;
+    --yellow-little-darker: #E0B604;
+    --yellow-real-darker: #7C620D;
+    --gray-color: #CCCCCC;
+    --black-color: #000000;
+    --font-content: "Plus Jakarta Sans", sans-serif;
+    --font-subtitles: "Orbitron", sans-serif;
+    --font-btn: "League Spartan", sans-serif;
+}
 
 * {
     padding: 0px;
     border: 0px;
     margin: 0px;
-    /* border: 1px #fff solid; */
-    text-decoration: none;
-    color: #fff;
-    font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
 }
 
-body{
-    position: relative;
+header {
     background-color: #000000;
     width: 100%;
-    height: 100vh; 
-    overflow-x: hidden;
-    
-    
+    height: 100vh;
+    background-image: url(/imgs/images/imagens_fundo/yellow-porsche-911-carrera.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left center;
 }
 
-main {
-    /* background-color:aqua; */
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 12%;
+    background-color: rgba(55, 55, 55, 0.193);
+    backdrop-filter: blur(10px);
+}
+
+.nav-right{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    width: 450px;
+    justify-content: center;
+    margin-left: 30px;
+}
+
+.nav-right ul{
+    display: flex;
+    gap: 21px;
+}
+
+.nav-right ul li{
+    list-style: none;
+}
+
+.nav-right ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-family: var(--font-content);
+    font-size: 20px;
+    transition: 0.7s ease;
+}
+
+.nav-right a:hover{
+    color: var(--yellow-darker);
+}
+
+.nav-logo{
+    height: 200px;
+    width: 200px;
+    position: relative;
+    margin-bottom: 80px;
+    margin-right: 100px;
+}
+
+.nav-logo a img{
+   position: relative; 
+   width: 200px;
+   cursor: none;
+}
+
+.botoes-nav{
+    display: flex;
+    margin-right: 60px;
+    width: 320px;
+    justify-content: space-around;
+    height: 40px;
+}
+
+.login-btn{
+    border: 2px solid #fff;
+    width: 140px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-btn a{
+    text-decoration: none;
+    color: #fff;
+    font-family: var(--font-content);
+    font-size: 18px;
+}
+
+.cadastro-btn{
+    background-color: var(--yellow-darker);
+    border-radius: 12px;
+    width: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cadastro-btn a{
+    text-decoration: none;
+    color: var(--black-color);
+    font-family: var(--font-content);
+    font-size: 18px;
+    font-weight: 1000;
+}
+
+.content{
+    height: 88vh;
     width: 100%;
-    margin: auto;
-
+    display: flex;
+    justify-content: space-around;
 }
 
-#fundoCamaro {
-    position: absolute;
+.content .slogan{
+    position: relative;
+    top: 150px;
+    left: 100px;
+}
+
+.content .slogan p{
+    font-family: var(--font-subtitles);
+    font-size: 50px;
+    font-weight: 500;
+}
+
+.slogan #exclusivo{
+    color: var(--yellow-darker);
+}
+
+.forms{
+    background-color: rgba(0, 0, 0, 0.489);
+    backdrop-filter: blur(10px);
+    width: 800px;
+    height: 150px;
+    position: relative;
+    top: 55%;
+    border: 4px solid #fff;
+    border-radius: 20px; 
+}
+
+.forms .forms-btn{
+    display: flex;
+    padding: 35px 50px;
+    gap: 30px;
+}
+
+.forms .forms-btn .collum{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.collum label{
+    color: var(--yellow-little-darker);
+    font-family: var(--font-btn);
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.collum .input-local{
+    display: flex;
+    width: 150px;
+    height: 40px;
+    align-items: center;
+    position: relative;
+}
+
+.collum .input-calendar{
+    display: flex;
+    width: 150px;
+    height: 40px;
+    align-items: center;
+    position: relative;
+}
+
+.input-local i{
+    position: relative;
+    right: 20px;
+    color: var(--yellow-darker);
+}
+
+.input-calendar i{
+    position: relative;
+    right: 28px;
+    color: var(--yellow-darker);
+}
+
+.collum input{
+    width: 150px;
+    height: 40px;
+    background-color: transparent;
+    border-radius: 5px;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    padding: 0 5px;
+    color:  #fff;
+    outline: none;
+}
+
+.btn-forms{
     width: 100%;
-    height: auto;
-    z-index: -1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 }
 
-#fundoCamaroImg {
+.btn-forms .search-btn{
+    position: relative;
+    top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--yellow-darker);
+    width: 140px;
+    height: 40px;
+    border-radius: 10px;
+}
+
+.search-btn a{
+    text-decoration: none;
+    color: var(--black-color);
+    font-family: var(--font-btn);
+    font-size: 20px;
+    font-weight: 500;
+}
+
+
+.sessão-diferencial{
     width: 100%;
     height: 100vh;
-    object-fit: cover;
-}
-
-header {
-    /* background-color: rgb(246, 127, 255); */
-    margin-bottom: 5%;
-}
-
-
-
-nav {
-    /* background-color: burlywood; */
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 5px; 
-}
- ul {
-    width: 25%;
-    display: flex;
-    list-style: none;
-    justify-content: space-around;
-    margin-left: 10px;
-    
-    
-    
-    
-} 
-
-ul li a {
-    color: #ffffff;
-
-}
-
-ul li a, #royalLogo, #searchCarrinhoImg, #conectar, #cadastro, #saibaMais, #checkout{
-    transition: transform 0.5s ease;
-    cursor: pointer;
-    display: inline-block; 
-
-}
-
- ul li a:hover, #royalLogo:hover, #searchCarrinhoImg:hover, #conectar:hover, #cadastro:hover, #saibaMais:hover, #checkout:hover {
-    transform: scale(1.2); /*  Aumenta em 30% */
-    transform-origin: center;
-}
-#royalLogoDiv {
-    margin: auto;
-    display: flex;
-    align-items: center;
-    width: 50%;
-    
-}
-
-
-#royalLogo {
-    width: 250px;
-    height: 100px;
-    object-fit: cover; 
-    margin: auto;
-}
-
-
-
-#botoes {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    width: 25%;
-
-}
-
-#conectar {
-    background: none;
-    padding: 8px 35px 8px 35px;
-    border: 3px solid;
-    border-radius: 15px;
-
-    
-}
-
-#cadastro {
-    background-color: #E0b604;
-    padding: 5px 20px 5px 20px;
-    border-radius: 15px;
-
-}
-
-#cadastro a {
-    color: #000000;
-    font-weight: bold;
-}
-
-#container {
-    padding: 10px;
-}
-
-#slogan{
-    font-family: 'Orbitron', sans-serif; 
-    font-size: 30px;
-    margin-left: 5%;
-    font-weight: bold;
-}
-
-#exclusivo {
-    font-family: 'Orbitron', sans-serif; 
-    font-size: 35px;
-    color: #E0b604;
-}
-
-
-/* Estilo para o fieldset */
-fieldset {
-    margin-top: 10%;
-    background-color: #000;
-    border: 4px solid transparent; 
-    border-radius: 10px;
-    padding: 1%; 
-    box-sizing: border-box; 
-    border-image: linear-gradient(30deg, #fff, #E0b604, #000) 1; 
-    display: flex;
-    flex-direction: column; /*Alinha os componentes em coluna */
-    width: 40%;
-    position: relative; /*Permite posicionar o fieldset no lado direito da página */
-    float: right;
-} 
-
-
-form {
-    display: flex;
-    flex-wrap: wrap; 
-    gap: 10px; 
-    width: 100%; 
-}
-
-
-form div {
-    flex: 1 1 150px; 
-    box-sizing: border-box; 
-}
-label {
-    display: block; 
-
-    font-weight: bold;
-}
-input {
-    width: 100%; 
-    padding: 0.5em; 
-    box-sizing: border-box; 
-    border-radius: 5px;
-    color: #000;
-    border: 3px #E0b604 solid;
-}
-
-#procurar {
-    align-self: flex-end; 
-    background-color: #E0b604; 
-    color: #000; 
-    border: none; 
-    padding: 10px 20px; 
-    font-size: 16px; 
-    font-family: Arial, sans-serif; 
-    border-radius: 5px; 
-    cursor: pointer; 
-    margin-top: 10px; 
-}
-
-.containerConteudo {
-    clear: both;
-    /* border: 2px #fff solid; */
-    margin-top: 33%;
+    background-color: black;
     text-align: center;
- 
-    width: 100%;
+    padding: 40px 80px;
 }
 
 
-.diferencial-titulo, h2#link{
+.diferencial-titulo, h2{
     font-family: "Orbitron", sans-serif;
     font-size: 3rem;
-
-    /* margin-bottom: 5%; */
+    color: var(--gray-color);
 }
 
 .diferenciais{
     display: flex;
     justify-content: space-around;
     margin-top: 20px;
-    margin-bottom: 10%;
+    margin-bottom: 100px;
 }
 
 .diferencial{
-
     max-width: 350px;
     margin: 0 60px;
 }
@@ -238,33 +270,25 @@ input {
 .diferencial, img{
     width: 50%;
     margin-top: 40px;
-    /* margin-bottom: 20px; */
 }
 
 .diferencial, h3{
-    color: #ffc400;
+    color: var(--yellow-little-darker);
     font-size: 1.5rem;
     margin-bottom: 10px;
-}
-
-h3#link{
-    font-family: "League Spartan", sans-serif;
-    
-  }
-
-.diferencial, p#link{
-    font-family: "Plus Jakarta Sans", sans-serif;
+    font-family: var(--font-btn);
 }
 
 .diferencial, p{
+    font-family: var(--font-content);
     font-size: 1rem;
     color: #ffff;
 }
 
 .read-more{
-    font-family: "Plus Jakarta Sans", sans-serif;
-    background-color: black;
-    border: 2px solid #FFD700;
+    font-family: var(--font-content);
+    background-color: var(--black-color);
+    border: 2px solid var(--yellow-darker);
     color: white;
     padding: 10px 50px;
     margin-bottom: 170px;
@@ -275,54 +299,30 @@ h3#link{
     border-radius: 10px;
     cursor: pointer;
     transition: 0.3s ease, color 0.3s ease;
-    box-shadow: 0 0 30px #FFD700;
+    box-shadow: 0 0 30px var(--yellow-darker);
 }
 
 .read-more:hover {
-    background-color: #FFD700;
-    color: black;
+    background-color: var(--yellow-darker);
+    color: var(--black-color);
 }
 
 
-
-
-
-
-
-
-
-
-
-.containerConteudo2 {
-    clear: both;
-    /* border: 2px #fff solid; */
-    margin-top: 0%;
-    text-align: center;
-}
-
-.container #marcas{
-    margin-top: 15%;
-    display: flex;
-
-    flex-wrap: wrap;
-
-    border: 2px solid;
-    border-color: blueviolet;
-} 
-
-.container #marcas.texto {
+.sessão-marcas{
     width: 100%;
-     height: 192px; 
-    margin-top: 50px;
-
+    height: 100vh;
+    text-align: center;
+    background-color: var(--black-color);
+    padding: 40px 50px;
 }
+
 
 .texto h1{
     color: transparent; 
     text-align: center;
     line-height: 70px;
     font-size: 50px;
-    font-family: 'Orbitron', sans-serif; 
+    font-family: var(--font-subtitles); 
     background: linear-gradient(to right, #141414, #ffd000); 
     -webkit-background-clip: text; 
     background-clip: text; 
@@ -332,15 +332,13 @@ h3#link{
     color: #fff;
     width: 100%;
     text-align: center;
-    font-size: 35px;
+    font-size: 32px;
+    font-weight: normal;
     font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
-
 aside {
     width: 100%;
-    margin-top: 50px;
-    background-color: #000000;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -348,41 +346,86 @@ aside {
 }
 
 .montadoras{
-    background-color: #000000;
-    width: 65%;
+    width: 100%;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: space-around; 
     align-items: center; 
-    padding: 10px; 
     box-sizing: border-box; 
+    padding-top: 30px;
 }
 
-.montadoras img {
-    width: 30%; 
-    margin-bottom: 10px; 
-    object-fit: cover; 
+.primeira-linha{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 180px;
 }
 
-.botao_container {
+.segunda-linha{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 180px;
+}
+
+.aston{
+    background-image: url(/imgs/images/imagens_logo/aston.png);
+    width: 200px;
+    height: 200px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.ferrari{
+    background-image: url(/imgs/images/imagens_logo/ferrari.png);
+    width: 200px;
+    height: 200px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.porsche{
+    background-image: url(/imgs/images/imagens_logo/porsche.png);
+    width: 200px;
+    height: 200px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.pagani{
+    background-image: url(/imgs/images/imagens_logo/pagani.png);
+    width: 200px;
+    height: 200px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.bugatti{
+    background-image: url(/imgs/images/imagens_logo/bugatti.png);
+    width: 200px;
+    height: 200px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.lambo{
+    background-image: url(/imgs/images/imagens_logo/lambo.png);
+    width: 200px;
+    height: 200px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.botao_container{
     display: flex;
     justify-content: center;
     margin-top: 40px; 
 }
-
-.saiba_mais {
-    background-color: #050505;
-    color: white;
-    padding: 15px 30px;
-    width: 100%;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 15px;
-    border:2px #FFC400 solid;
-    text-transform: uppercase; 
-    justify-items: center;
-}
-
-.saiba_mais:hover {
-    background-color: #585454; 
-} 

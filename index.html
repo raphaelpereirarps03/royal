@@ -9,122 +9,79 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700&display=swap">
     <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <main>
-        <div id="fundoCamaro">
-            <img src="./imgs/images/imagens_fundo/yellow-porsche-911-carrera.jpg" alt="Imagem de um camaro" id="fundoCamaroImg">
-        </div>
+    <header>
         <!-- Nav Bar vem aqui no header-->
-        <header>
-            <nav>
-                <!-- Lista de Links -->
+        <div class="nav-bar">
+            <div class="nav-right">
                 <ul>
-                    <li>
-                        <a href="#"> home </a>
-                    </li>
-    
-                    <li>
-                        <a href="#"> sobre nós </a>
-                    </li>
-                    
-                    <li>
-                        <a href="#"> destaques </a>
-                    </li>
-    
-                    <li>
-                        <a href="#"> diferencial </a>
-                    </li>
+                    <li><a href="#"> home </a></li>
+                    <li><a href="#"> sobre nós </a></li>
+                    <li><a href="#"> destaques </a></li>
+                    <li><a href="#"> diferencial </a></li>
                 </ul>
-    
-                <a href="#"  id="royalLogoDiv">
-                    <img src="./imgs/royalLogo.png" alt="Logo marco da royal (Texto escrito royal com uma figura de uma coroa em cima da letra O)" id="royalLogo"/> 
-                </a>
-                
-
-                
-                <div id="botoes">
-
-                    <button id="conectar"><a href="./login.html">Login</a></button>
-                    
-                    <button id="cadastro"><a href="">Cadastre-se</a></button>
+            </div>
+            <div class="nav-logo">
+                <a href="#"  id="royalLogoDiv"><img src="/imgs/royalLogoIcon.png"/></a>
+            </div>
+            <div class="botoes-nav">
+                <div class="login-btn">
+                    <a href="./login.html">Login</a>
                 </div>
-            </nav>
-        </header>
-        
-        <!-- Minha tela inicial lá da home page vem aqui e toda e qualquer parte que vcs forem fazendo vai aqui DENTRO DA CONTAINER e embaixo do restante do código que estiver aqui. 
-        Partes que devem estar contidas aqui dentro da container, seguindo o modelo lá do figma: HOME; SOBRE NÓS; SERVIÇOS; DESTAQUE/FROTA/FROTA-SECTIONS (RESPECTIVAMENTE); MARCAS E FOOTER.
-        CRIEM AS BRANCHS PARA AS ALTERAÇÕES E CRIAÇÕES DAS PARTES. Vamos tentar deixar comentado pra ficar claro pra todo mundo o que é, como funciona tal parte e etc -->
-        <div class="container">
-            <p id="slogan">
-                DESCUBRA O EXTRAORIDNÁRIO
-            </p>
-            <br />
-            <p id="slogan">
-                EXPERIMENTE O <span id="exclusivo">EXCLUSIVO</span>
-            </p>
-
-            <fieldset>
-                <form>
-                    <div>
-                        
-                        <label for="local">
-                            Local
-                        </label>
-                        <br />
-                        <input type="text" placeholder="Local" name="local" maxlength="200" id="inputLocal" >
-                    </div>
-                    
-                    <div>
-
-                        <label for="localRetirada">
-                            Local de Retirada
-                        </label>
-                        
-                        <br />
-                        
-                        <input type="text" placeholder="Local de Retirada" name="localRetirada" maxlength="200" id="inputLocalRetirada" >
-                    </div>
-                    <div>
-                        
-                        <label for="data">
-                            Data
-                        </label>
-                        
-                        <br />
-                        
-                        <input type="date" placeholder="dd/mm/aa" name="data" maxlength="200" id="data" >
-                    </div>
-                    
-                    <div>
-
-                        <label for="dataRetirada">
-                            Data de Retirada
-                        </label>
-                        
-                        <br />
-                        
-                        <input type="date" placeholder="Data de Retirada" name="dataRetirada" maxlength="200" id="dataRetirada" >
-                    </div>
-                    
-                    
-                    
-                    
-                    <button type="submit" id="procurar">
-                        Procurar
-                    </button>
-                    
-                </form>
-            </fieldset>
-
-
-            
-
+                <div class="cadastro-btn">
+                    <a href="#">Cadastrar</a>
+                </div>
             </div>
         </div>
+        <div class="content">
+            <div class="slogan">
+                <p>DESCUBRA O EXTRAORIDNÁRIO</p>
+                <p>EXPERIMENTE O <span id="exclusivo">EXCLUSIVO</span></p>
+            </div>
+            <div class="forms">
+                <form class="forms-btn">
+                    <div class="collum">
+                        <label for="local">Local</label>
+                        <div class="input-local">
+                            <input type="text" placeholder="Local" name="local" maxlength="200" id="inputLocal">
+                            <i class="fa fa-map-marker fa-lg" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <div class="collum">
+                        <label for="localRetirada">Local de Retirada</label>
+                        <div class="input-local">
+                            <input type="text" placeholder="Local" name="local" maxlength="200" id="inputLocal">
+                            <i class="fa fa-map-marker fa-lg" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <div class="collum">
+                        <label for="data">Data</label>
+                        <div class="input-calendar">
+                            <input type="text" placeholder="dd/mm/yyyy" name="data" maxlength="200" id="inputData">
+                            <i class="fa fa-calendar-o fa-lg" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <div class="collum"> 
+                        <label for="dataRetirada">Data de Retirada</label>
+                        <div class="input-calendar">
+                            <input type="text" placeholder="dd/mm/yyyy" name="data" maxlength="200" id="inputData">
+                            <i class="fa fa-calendar-o fa-lg" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </form>
+                <div class="btn-forms">
+                    <div class="search-btn">
+                        <a href="#">Procurar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
 
-
-        <div class="containerConteudo">
+    <section class="sessão-diferencial">
             <h2 class="diferencial-titulo">DIFERENCIAL</h2>
             <div class="diferenciais">
                 <div class="diferencial">
@@ -144,43 +101,39 @@
                 </div>
             </div>
             <a href="#" class="read-more">Saiba mais</a>
-    
+    </section>
+
+    <section class="sessão-marcas">
+        <div class="texto">
+            <h1>Exclusividade sobre rodas</h1>
+            <h3>Explorando a excelência das marcas que definem o luxo automotivo</h3>
         </div>
-
-
-
-        <div class="containerConteudo2">
-            <section id="marcas">
-                <div class="texto">
-                    <h1>Exclusividade sobre rodas</h1>
-                    <h3>Explorando a excelência das marcas que definem o luxo automotivo</h3>
+        <aside>
+            <div class="montadoras">
+                <div class="primeira-linha">
+                    <div class="aston"></div>
+                    <div class="ferrari"></div>
+                    <div class="porsche"></div>
                 </div>
-        
-                <aside>
-                    <div class="montadoras">
-                        <img src="imgs/logo aston.png" alt="aston martin">
-                        <img src="imgs/logo ferrari.png" alt="Ferrari">
-                        <img src="imgs/logo porsche.png" alt="porsche">
-                        <img src="imgs/Pagani-Logo-PNG.png" alt="pagani">
-                        <img src="imgs/logo bugatti.png" alt="bugatti">
-                        <img src="imgs/logo lambo.png" alt="Lamborghini">
-                      </div>
-                      
-                      <div class="botao_container">
-                        <a href="#" class="read-more">Saiba mais</a>
-                    </div>
-                </aside>      
-                      
-            </section>
-        </div>
+                <div class="segunda-linha">
+                    <div class="pagani"></div>
+                    <div class="bugatti"></div>
+                    <div class="lambo"></div>
+                </div>
+            </div>
+            <div class="botao_container">
+                <a href="#" class="read-more">Saiba mais</a>
+            </div>
+        </aside>     
+    </section>
+ 
+    
+    
 
+    <!-- Rodapé da página-->
+    <footer>
         
-        
-
-        <!-- Rodapé da página-->
-        <footer>
-            
-        </footer>
-    </main>
+    </footer>
+    <script src="/js/script.js"></script>
 </body>
 </html>
