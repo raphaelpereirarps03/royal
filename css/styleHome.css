@@ -255,7 +255,11 @@ header {
     height: 100vh;
     background-color: black;
     text-align: center;
-    padding: 40px 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
 }
 
 
@@ -300,16 +304,17 @@ header {
     background-color: var(--black-color);
     border: 2px solid var(--yellow-darker);
     color: white;
-    padding: 10px 50px;
-    margin-bottom: 170px;
-    text-align: center;
     text-decoration: none;
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-size: 16px;
     border-radius: 10px;
     cursor: pointer;
     transition: 0.3s ease, color 0.3s ease;
     box-shadow: 0 0 30px var(--yellow-darker);
+    width: 163px;
+    height: 44px;
 }
 
 .read-more:hover {
@@ -324,35 +329,39 @@ header {
     height: 100vh;
     text-align: center;
     background-color: var(--black-color);
-    padding: 40px 50px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
 }
 
 
 .texto h1{
     color: transparent; 
     text-align: center;
-    line-height: 70px;
     font-size: 50px;
     font-family: var(--font-subtitles); 
     background: linear-gradient(to right, #141414, #ffd000); 
     -webkit-background-clip: text; 
     background-clip: text; 
+    padding-top: 50px;
 }
 
-.texto h3{
+.texto p{
     color: #fff;
     width: 100%;
     text-align: center;
-    font-size: 32px;
+    font-size: 35px;
     font-weight: normal;
     font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
 aside {
     width: 100%;
+    height: 100%;
     display: flex;
+    gap: 80px;
     justify-content: center;
-    align-items: center;
     flex-direction: column;
 }
 
@@ -363,7 +372,6 @@ aside {
     justify-content: space-around; 
     align-items: center; 
     box-sizing: border-box; 
-    padding-top: 30px;
 }
 
 .primeira-linha{
@@ -382,8 +390,8 @@ aside {
 
 .aston{
     background-image: url(/imgs/images/imagens_logo/aston.png);
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -391,8 +399,8 @@ aside {
 
 .ferrari{
     background-image: url(/imgs/images/imagens_logo/ferrari.png);
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -400,8 +408,8 @@ aside {
 
 .porsche{
     background-image: url(/imgs/images/imagens_logo/porsche.png);
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -409,8 +417,8 @@ aside {
 
 .pagani{
     background-image: url(/imgs/images/imagens_logo/pagani.png);
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -418,8 +426,8 @@ aside {
 
 .bugatti{
     background-image: url(/imgs/images/imagens_logo/bugatti.png);
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -427,94 +435,20 @@ aside {
 
 .lambo{
     background-image: url(/imgs/images/imagens_logo/lambo.png);
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
 }
 
-
-.botao_container{
-    display: flex;
+.botao_container .more-content{
     justify-content: center;
-    margin-top: 40px; 
-}
-/*FIM SESSÃO MARCAS*/
-
-.sessão-sobre_nos {
-    width: 100%;
-    height: 120vh;
-    background-color: var(--black-color);
-    text-align: center;
-    padding: 40px 80px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.sessão-sobre_nos h1 {
-    color: transparent; 
-    text-align: center;
-    line-height: 70px;
-    font-size: 50px;
-    font-family: var(--font-subtitles); 
-    background: linear-gradient(to right, #141414, #ffd000); 
-    -webkit-background-clip: text; 
-    background-clip: text; 
-    margin-bottom: 20px;
-}
-
-.sessão-sobre_nos .content1 {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    max-width: 1200px; /* Largura máxima para manter o layout proporcional */
-    margin: 0 auto; /* Centraliza o conteúdo principal */
-    gap: 20px; /* Espaço entre a imagem e o texto */
-}
-
-.sessão-sobre_nos #fundo_cinza {
-    width: 477px;
-    height: 244px;
-    border-radius: 15px;
-    background-color: #C3C3C3;
-    position: relative; /* Permite a posição absoluta da imagem */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.sessão-sobre_nos #fundo_cinza img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Ajusta a imagem para cobrir o card */
-    border-radius: 15px;
-}
-
-.sessão-sobre_nos .text {
-    width: 60%;
-    margin-top: 150px;
-}
-
-.sessão-sobre_nos .text h2,
-.sessão-sobre_nos .text p {
-    margin: 0 0 10px 0; /* Espaçamento entre os elementos de texto */
-}
-
-
-.sessão-sobre_nos .read-more {
     font-family: var(--font-content);
     background-color: var(--black-color);
     border: 2px solid var(--yellow-darker);
     color: white;
     padding: 10px 50px;
-    margin-bottom: 170px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -525,8 +459,126 @@ aside {
     box-shadow: 0 0 30px var(--yellow-darker);
 }
 
+.more-content:hover {
+    background-color: var(--yellow-darker);
+    color: var(--black-color);
+}
+/*FIM SESSÃO MARCAS*/
+
+.sessão-sobre_nos {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--black-color);
+    padding-top: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sessão-sobre_nos h1 {
+    color: var(--gray-color);
+    text-align: center;
+    padding-top: 100px;
+    display: inline-flex;
+    font-size: 45px;
+    font-family: var(--font-subtitles); 
+    background: linear-gradient(to right, #141414, #ffd000); 
+    -webkit-background-clip: text; 
+    background-clip: text; 
+}
+
+.content1{
+    display: flex;
+    align-items: center;
+    width: 80%;
+    position: relative;
+    justify-content: center;
+    gap: 50px;
+}
+
+.sessão-sobre_nos #fundo_cinza {
+    width: 477px;
+    height: 244px;
+    border-radius: 15px;
+    background-color: #C3C3C3;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sessão-sobre_nos #fundo_cinza img {
+    width: 750px;
+    height: 420px;
+    position: relative;
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+}
+
+.sessão-sobre_nos .text{
+    position: relative;
+    left: 80px;
+    margin-top: 80px;
+}
+
+.sessão-sobre_nos .text h2{
+    font-family: var(--font-content);
+    font-size: 35px;
+    font-weight: bold;
+    display: flex;
+}
+
+.text span{
+    color: var(--yellow-darker);
+    font-size: 35px;
+    font-family: var(--font-content);
+    display: flex;
+    font-weight: bold;
+}
+
+.sessão-sobre_nos .text p{
+    font-family: var(--font-content);
+    font-size: 20px;
+    font-weight: normal;
+    text-align: start;
+    padding-top: 60px;
+    width: 558px;
+    line-height: 40px;
+}
+
+.sessão-sobre_nos .more {
+    margin-top: 40px;
+    background-color: var(--black-color);
+    border: 2px solid var(--yellow-darker);
+    color: white;
+    display: flex;
+    font-family: var(--font-content);
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 163px;
+    height: 44px;
+    transition: 0.3s ease, color 0.3s ease;
+    box-shadow: 0 0 30px var(--yellow-darker);
+}
+
 .sessão-sobre_nos .read-more:hover {
     background-color: var(--yellow-darker);
     color: var(--black-color);
+}
+
+.sessão-sobre_nos .linha{
+    background-color: #FFC400;
+    width: 70%;
+    height: 1px;
+    position: relative;
+    left: 2px;
+    top: 120px;
 }
 
