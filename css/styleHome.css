@@ -123,6 +123,10 @@ header {
     font-weight: 1000;
 }
 
+.login-btn:hover .cadastro-btn:hover .search-btn:hover {
+    cursor: pointer;
+}
+
 .content{
     height: 88vh;
     width: 100%;
