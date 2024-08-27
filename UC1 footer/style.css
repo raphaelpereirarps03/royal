@@ -1,0 +1,107 @@
+/* Reset de estilo básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%; /* Garantir que o HTML e o body ocupem 100% da altura da tela */
+    display: flex;
+    flex-direction: column; /* Usar flexbox para alinhar o conteúdo e o footer */
+}
+
+body {
+    background-color: #000;
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+}
+
+/* Conteúdo principal ocupa o máximo de espaço possível */
+.main-content {
+    flex: 1; /* Faz o conteúdo principal crescer para preencher o espaço restante */
+}
+
+/* Estilo do Footer */
+footer {
+    background-color: #000;
+    padding: 40px 20px;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between; /* Espaça os elementos nas extremidades */
+    align-items: center; /* Alinha verticalmente ao centro */
+    margin-bottom: 20px;
+}
+
+/* Logo e ícones de redes sociais */
+.footer-logo-social {
+    display: flex; /* Define o layout como flex para alinhar logo e mídias sociais */
+    align-items: center; /* Alinha verticalmente ao centro */
+    gap: 20px; /* Espaçamento entre a logo e as mídias sociais */
+}
+
+.logo img {
+    width: 100px; /* Tamanho da logo */
+}
+
+.social-media {
+    display: flex; /* Layout flex para alinhar os ícones de mídia social */
+    gap: 15px; /* Espaçamento entre os ícones de mídia social */
+}
+
+.social-icon img {
+    width: 30px; /* Tamanho dos ícones das redes sociais */
+    filter: brightness(0) invert(1); /* Transformando a imagem em branco */
+    transition: all 0.3s ease;
+}
+
+.social-icon img:hover {
+    filter: brightness(0) invert(1) drop-shadow(0 0 5px #ff0); /* Efeito de hover para brilhar */
+}
+
+/* Navegação do Footer */
+.footer-nav {
+    display: flex;
+    flex-direction: row; /* Alinha links verticalmente */
+    align-items: flex-end; /* Alinha o conteúdo à direita */
+    gap: 10px;
+}
+
+.footer-nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.footer-nav a:hover {
+    color: #ff0; /* Amarelo ao passar o mouse */
+}
+
+/* Linha de Separação */
+.footer-line {
+    width: 100%; /* Largura da linha */
+    height: 1px; /* Altura da linha */
+    background-color: #ff0; /* Cor amarela */
+    margin: 20px auto; /* Espaçamento e centralização */
+}
+
+/* Copyright */
+.footer-copyright {
+    font-size: 12px;
+    color: #888;
+    margin-top: 20px;
+}
+
