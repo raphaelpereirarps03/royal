@@ -126,6 +126,28 @@ header {
     cursor: pointer;
 }
 
+
+.login-btn2 {
+    display: none;
+}
+.nav-logo2 {
+    display: none;
+}
+.mobile-menu-icon {
+    display: none;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+
+
+
+
+
+
+
 .content{
     height: 88vh;
     width: 100%;
@@ -767,7 +789,6 @@ aside {
 }
 /*FIM SESSÃO MARCAS*/
 
-<<<<<<< HEAD
 /* COMEÇO SESSÃO SOBRE NÓS */
 .sessão-sobre_nos {
     width: 100%;
@@ -886,69 +907,158 @@ aside {
     top: 120px;
 }
 /* FIM SESSÃO SOBRE NÓS */
-=======
->>>>>>> frota
 
-/* VISUALIZAÇÃO TABLET DIFERENCIAL */
-
-@media only screen and (min-width:480px){
+@media only screen and (min-width:481px) {
     @media only screen and (max-width:720px) {
-    .sessão-diferencial{
-        height: 100%;
-        width: 100%;
-    }
+        .nav-bar {
+            height: 15%;
+            width: 100%;
+            display: flex;
+            padding: 1.5rem 4rem;
+            
+            justify-content: space-between;
+        }
 
-    .diferenciais {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 40px;
-    }
+        .nav-right,
+        .nav-logo,
+        .botoes-nav {
+            display: none;
+            width: 20%;
+        }
 
-    .diferencial img {
-        width: 40%;
-    }
+        .nav-right2 {
+            display: block;
+            flex-direction: column;
+        }
 
-    .read-more{
-        margin-bottom: 50px;
+        .login-btn2 {
+            display: block;
+            border: 2px solid #fff;
+
+            border-radius: 12px;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 10px;
+            width: 50%;
+        }
+
+        .nav-logo2 {
+            display: block;
+            justify-content: center;
+            width: 50%;;
+        }
+
+        .mobile-menu-icon {
+            margin-top: 40px;
+            display: block;
+            align-items: center;
+            justify-content: center;
+            width: 25%;
+        }
+
+
+
+        .mobile-menu-icon button {
+            display: flex;
+
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            height:75px ;
+            width: 75px;
+        }
+
+        .mobile-menu ul{
+            gap: 21px;
+            background-color: #383838;
+            padding: 20px
+            ;
+        }
+        
+        .mobile-menu ul li{
+            list-style: none;
+        }
+        
+        .mobile-menu ul li a{
+            text-decoration: none;
+            color: #fff;
+            font-family: var(--font-content);
+            font-size: 20px;
+            transition: 0.7s ease;
+        }
+        
+        .mobile-menu a:hover{
+            color: var(--yellow-darker);
+        }
+
+        
+
+        .mobile-menu ul {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            padding-bottom: 1rem;
+        }
+
+        .mobile-menu nav {
+            display: block;
+            padding-top: 1.2rem;
+
+        }
+
+        .mobile-menu .login-button {
+            display: block;
+            padding: 1rem 2rem;
+
+        }
+
+        .mobile-menu .login-button button {
+            width: 100%;
+        }
+
+        .open {
+            display: block;
+        }
+
+
+
+        .content {
+            display: flex;
+
+        }
+
+        .slogan {
+            width: 100%;
+            position: relative;
+            top:-100px
+
+        }
+
+        .slogan p {
+            position: relative;
+            top:-100px;
+           text-align: center;
+        }
+
+        .forms {
+            width: 90%;
+            padding: 0%;
+            display: flex;
+            flex-direction: column; /* Garante que as colunas fiquem empilhadas verticalmente */
+            gap: 20px; /* Adiciona espaçamento entre as colunas */
+            position: relative; /* Permite o uso de 'top' e 'left' */
+            top: 70%; /* Ajusta a posição vertical */
+            left: -70%; /* Mantém o formulário alinhado centralmente */
+        }
+        
+        .forms .forms-btn .collum {
+            width: 100%; /* Garante que cada coluna ocupe toda a largura disponível */
+            clear: both; /* Garante que não haja flutuações */
+            display: flex;
+            flex-direction: column;
+        }
+        
     }
 }
-}
 
-/* VISUALIZAÇÃO MOBILE DIFERENCIAL */
-@media (max-width: 480px) {
-    .sessão-diferencial {
-       height: 100%;
-       width: 100%;
-    }
-
-    .diferenciais {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-       
-    }
-
-    .diferencial-titulo, h2 {
-        font-size: 40px;
-    }
-
-    .diferencial img {
-        width: 35%;
-    }
-
-    .diferencial h3 {
-        font-size: 20px;
-    }
-
-    .diferencial p {
-        font-size: 15px;
-    }
-
-    .read-more {
-        font-size: 14px;
-        width: 140px;
-        height: 40px;
-        margin-bottom: 60px;
-    }
-}

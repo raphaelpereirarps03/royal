@@ -49,3 +49,17 @@ inputDataRetirada.addEventListener('blur', function(){
         inputDataRetirada.placeholder = "dd/mm/yyyy"
     }
 })
+
+
+function menuShow() {
+    let menuMobile = document.querySelector('.mobile-menu');
+    let menuIcon = document.querySelector('.icon-Menu'); // Corrigido o seletor
+    
+    if (menuMobile.classList.contains('open')) {
+        menuMobile.classList.remove('open');
+        menuIcon.src = "imgs/menuHamburguer.png"; // Ícone de hamburguer
+    } else {
+        menuMobile.classList.add('open');
+        menuIcon.src = "imgs/btnClose.png"; // Ícone de fechar
+    }
+}
