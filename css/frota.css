@@ -1,0 +1,305 @@
+/*VARIAVEIS DE COR ETC*/
+:root{
+    --yellow-darker: #FFC400;
+    --yellow-little-darker: #E0B604;
+    --yellow-real-darker: #7C620D;
+    --gray-color: #CCCCCC;
+    --black-color: #000000;
+    --font-content: "Plus Jakarta Sans", sans-serif;
+    --font-subtitles: "Orbitron", sans-serif;
+    --font-btn: "League Spartan", sans-serif;
+}
+
+/*CSS RESET*/
+* {
+    padding: 0px;
+    border: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.porsche{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--black-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+}
+
+h1{
+    color: var(--gray-color);
+    text-align: center;
+    font-family: var(--font-subtitles);
+    font-size: 55px;
+    position: relative;
+    bottom: 50px;
+}
+
+.nav-top{
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+}
+
+.nav-left{
+    width: 500px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.icons{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.icons .fa-bars{
+    color: #CCCCCC;
+    transition: ease 0.5s;
+}
+
+.icons .fa-bars:hover{
+    color: var(--yellow-darker);
+}
+
+.icons .fa-th-large{
+    color: #fff;
+    transition: ease 0.5s;
+}
+
+
+.icons .fa-th-large:hover{
+    color: var(--yellow-darker);
+}
+
+.nav-left p{
+    color: #fff;
+    font-family: var(--font-content);
+    font-size: 18px;
+}
+
+.area{
+    background-color: #000000;
+    height: 55px;
+    width: 230px;
+    border: 2px solid var(--yellow-real-darker);
+    border-radius: 10px;
+    align-items: center;
+    display: flex;
+}
+
+.area .select{
+    display: flex;
+    padding: 20px 10px;
+}
+
+.select .fa-chevron-down{
+    color: var(--gray-color);
+    padding-top: 10px;
+    transition: ease 0.5s;
+}
+
+.fa-chevron-down:hover{
+    color: var(--yellow-darker);
+}
+
+.nav-right h3{
+    color: #fff;
+    font-family: var(--font-content);
+    font-size: 60px;
+}
+
+.cars-frota{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    width: 100%;
+    background-color: #000000;
+}
+
+.car{
+    width: 336px;
+    height: 259px;
+    border: 1px solid var(--gray-color);
+    border-radius: 30px;
+}
+
+.car .mini-logo{
+    position: absolute;
+    width: 22px;
+    height: 29px;
+    object-fit: cover;
+    object-position: center;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.image-car{
+    position: relative;
+    bottom: 10%;
+    left: 13px;
+}
+
+.image-car .porsche-gt3{
+    width: 315px;
+    height: 182px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.image-car .porsche-911{
+    width: 315px;
+    height: 182px;
+    object-fit: cover;
+    object-position: center;
+    padding-top: 80px;
+}
+
+.baixo-left{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 20px;
+    line-height: 28px;
+}
+
+.baixo-left .name{
+    font-family: var(--font-btn);
+    font-size: 28px;
+    font-weight: 500;
+    color: var(--gray-color);
+}
+
+.baixo-left .model{
+    font-family: var(--font-btn);
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--yellow-darker);
+}
+
+.baixo-right{
+    position: relative;
+    left: 190px;
+    bottom: 65px;
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+}
+
+.baixo-right .price{
+    position: relative;
+    right: 20px;
+    font-family: var(--font-btn);
+    font-size: 20px;
+    color: var(--gray-color);
+    font-weight: 500;
+}
+
+.btn-right{
+    width: 50%;
+    position: relative;
+    right: 45px;
+    display: flex;
+    justify-content: end;
+    height: 30px;
+    align-items: center;
+    gap: 20px;
+}
+
+.btn-right .plans{
+    text-decoration: none;
+    border: 1px solid #fff;
+    height: 30px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    font-family: var(--font-content);
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.btn-right .buy{
+    text-decoration: none;
+    border: 1px solid #fff;
+    height: 30px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    font-family: var(--font-content);
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.btn-frota{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    bottom: 100px;
+}
+
+.fa-arrow-circle-left{
+    color: var(--yellow-darker);
+}
+
+.fa-arrow-circle-right{
+    color: var(--yellow-darker);
+}
+
+.aston{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--black-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 150px;
+}
+
+.lambo{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--black-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 150px;
+}
+
+.jaguar{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--black-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 150px;
+}
+
+.linha{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #000000;
+}
+
+.line{
+    width: 50%;
+    height: 1px;
+    display: flex;
+    background-color: var(--yellow-darker);
+    justify-content: center;
+}
