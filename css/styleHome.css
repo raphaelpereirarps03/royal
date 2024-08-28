@@ -888,3 +888,67 @@ aside {
 /* FIM SESSÃO SOBRE NÓS */
 =======
 >>>>>>> frota
+
+/* VISUALIZAÇÃO TABLET DIFERENCIAL */
+
+@media only screen and (min-width:480px){
+    @media only screen and (max-width:720px) {
+    .sessão-diferencial{
+        height: 100%;
+        width: 100%;
+    }
+
+    .diferenciais {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .diferencial img {
+        width: 40%;
+    }
+
+    .read-more{
+        margin-bottom: 50px;
+    }
+}
+}
+
+/* VISUALIZAÇÃO MOBILE DIFERENCIAL */
+@media (max-width: 480px) {
+    .sessão-diferencial {
+       height: 100%;
+       width: 100%;
+    }
+
+    .diferenciais {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+       
+    }
+
+    .diferencial-titulo, h2 {
+        font-size: 40px;
+    }
+
+    .diferencial img {
+        width: 35%;
+    }
+
+    .diferencial h3 {
+        font-size: 20px;
+    }
+
+    .diferencial p {
+        font-size: 15px;
+    }
+
+    .read-more {
+        font-size: 14px;
+        width: 140px;
+        height: 40px;
+        margin-bottom: 60px;
+    }
+}
