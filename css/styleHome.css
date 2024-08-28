@@ -885,6 +885,174 @@ aside {
     left: 2px;
     top: 120px;
 }
+
+/* Estilo do Footer */
+footer {
+    background-color: #000;
+    padding: 40px 20px;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Logo e ícones de redes sociais */
+.footer-logo-social {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.flogo img {
+    width: 100px;
+}
+
+.fsocial-media {
+    display: flex;
+    gap: 15px;
+}
+
+.fsocial-icon img {
+    width: 30px;
+    filter: brightness(0) invert(1);
+    transition: all 0.3s ease;
+}
+
+.fsocial-icon img:hover {
+    filter: brightness(0) invert(1) drop-shadow(0 0 5px rgb(129, 129, 29));
+}
+
+/* Navegação do Footer */
+.footer-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 10px;
+}
+
+.footer-nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.footer-nav a:hover {
+    color: rgb(212, 212, 75);
+}
+
+/* Linha de Separação */
+.footer-line {
+    width: 100%;
+    height: 1px;
+    background-color: rgb(255, 255, 0);
+    margin: 20px auto;
+}
+
+/* Copyright */
+.footer-copyright {
+    font-size: 12px;
+    color: #888;
+    margin-top: 20px;
+}
+
+/* Estilos para a seção de avaliações */
+.customer-reviews {
+    text-align: center;
+    padding: 20px;
+    background-color: #111;
+    margin-bottom: 20px;
+    position: relative;
+    color: white;
+}
+
+.reviews-carousel {
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Espaçamento entre os cards */
+    width: 80%; /* Largura total do carrossel */
+    margin: 0 auto; /* Centraliza o carrossel */
+}
+
+.review-circle {
+    width: 50px; /* Tamanho da imagem */
+    height: 50px; /* Tamanho da imagem */
+    border-radius: 50%; /* Torna a imagem circular */
+    object-fit: cover; /* Ajusta a imagem para cobrir o elemento */
+    position: absolute; /* Posiciona a imagem no canto esquerdo */
+    left: 15px; /* Margem à esquerda */
+    top: 50%; /* Centraliza verticalmente */
+    transform: translateY(-50%); /* Ajusta a posição vertical */
+    border: 2px solid yellow; /* Adiciona uma borda ao redor da imagem */
+}
+
+/* Atualiza o estilo do card de review para acomodar a imagem */
+.review-card {
+    background-color: black;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px yellow;
+    color: yellow;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    min-height: 180px;
+    position: relative; /* Necessário para posicionar a imagem dentro do card */
+    padding-left: 80px; /* Adiciona espaço para a imagem circular */
+}
+
+.review-stars {
+    font-size: 20px;
+    color: yellow;
+    margin-bottom: 10px;
+}
+
+.review-text {
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.arrow {
+    border-color: 10px  solid rgb(46, 46, 39);
+    background-color: rgb(207, 207, 45);
+    color: black;
+    border: solid  rgb(255, 255, 0);
+    cursor: pointer;
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    border-radius: 50%;
+    width: 50px;
+}
+
+.left-arrow {
+    left: 30px; /* Mais distante da borda */
+}
+
+.right-arrow {
+    right: 30px; /* Mais distante da borda */
+}
+
 /* FIM SESSÃO SOBRE NÓS */
 =======
 >>>>>>> frota
