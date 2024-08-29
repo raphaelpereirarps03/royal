@@ -16,6 +16,11 @@
     border: 0px;
     margin: 0px;
     box-sizing: border-box;
+    
+}
+
+body {
+    overflow-x: hidden;
 }
 
 /*COMEÇO SESSÃO HOME */
@@ -1062,3 +1067,479 @@ aside {
     }
 }
 
+
+
+
+/* Estilo do Footer */
+footer {
+    background-color: #000;
+    padding: 40px 20px;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Logo e ícones de redes sociais */
+.footer-logo-social {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.flogo img {
+    width: 100px;
+}
+
+.fsocial-media {
+    display: flex;
+    gap: 15px;
+}
+
+.fsocial-icon img {
+    width: 30px;
+    filter: brightness(0) invert(1);
+    transition: all 0.3s ease;
+}
+
+.fsocial-icon img:hover {
+    filter: brightness(0) invert(1) drop-shadow(0 0 5px rgb(129, 129, 29));
+}
+
+/* Navegação do Footer */
+.footer-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 10px;
+}
+
+.footer-nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.footer-nav a:hover {
+    color: rgb(212, 212, 75);
+}
+
+/* Linha de Separação */
+.footer-line {
+    width: 100%;
+    height: 1px;
+    background-color: rgb(255, 255, 0);
+    margin: 20px auto;
+}
+
+/* Copyright */
+.footer-copyright {
+    font-size: 12px;
+    color: #888;
+    margin-top: 20px;
+}
+
+/* Estilos para a seção de avaliações */
+.customer-reviews {
+    text-align: center;
+    padding: 20px;
+    background-color: #111;
+    margin-bottom: 20px;
+    position: relative;
+    color: white;
+}
+
+.reviews-carousel {
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Espaçamento entre os cards */
+    width: 80%; /* Largura total do carrossel */
+    margin: 0 auto; /* Centraliza o carrossel */
+}
+
+.review-circle {
+    width: 50px; /* Tamanho da imagem */
+    height: 50px; /* Tamanho da imagem */
+    border-radius: 50%; /* Torna a imagem circular */
+    object-fit: cover; /* Ajusta a imagem para cobrir o elemento */
+    position: absolute; /* Posiciona a imagem no canto esquerdo */
+    left: 15px; /* Margem à esquerda */
+    top: 50%; /* Centraliza verticalmente */
+    transform: translateY(-50%); /* Ajusta a posição vertical */
+    border: 2px solid yellow; /* Adiciona uma borda ao redor da imagem */
+}
+
+/* Atualiza o estilo do card de review para acomodar a imagem */
+.review-card {
+    background-color: black;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px yellow;
+    color: yellow;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    min-height: 180px;
+    position: relative; /* Necessário para posicionar a imagem dentro do card */
+    padding-left: 80px; /* Adiciona espaço para a imagem circular */
+}
+
+.review-stars {
+    font-size: 20px;
+    color: yellow;
+    margin-bottom: 10px;
+}
+
+.review-text {
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.arrow {
+    border-color: 10px  solid rgb(46, 46, 39);
+    background-color: rgb(207, 207, 45);
+    color: black;
+    border: solid  rgb(255, 255, 0);
+    cursor: pointer;
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    border-radius: 50%;
+    width: 50px;
+}
+
+.left-arrow {
+    left: 30px; /* Mais distante da borda */
+}
+
+.right-arrow {
+    right: 30px; /* Mais distante da borda */
+}
+
+/* VISUALIZAÇÃO MOBILE DIFERENCIAL */
+/* visualização tablet */
+
+@media only screen and (min-width:480px){
+    @media only screen and (max-width:720px) {
+    .sessão-diferencial{
+        height: 100%;
+        width: 100%;
+    }
+
+    .diferenciais {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .diferencial img {
+        width: 40%;
+    }
+
+    .read-more{
+        margin-bottom: 50px;
+    }
+}
+
+
+/* Estilos para dispositivos móveis */
+@media (max-width: 480px) {
+    .sessão-diferencial {
+       height: 100%;
+       width: 100%;
+    }
+
+    .diferenciais {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+       
+    }
+
+    .diferencial-titulo, h2 {
+        font-size: 40px;
+    }
+
+    .diferencial img {
+        width: 35%;
+    }
+
+    .diferencial h3 {
+        font-size: 20px;
+    }
+
+    .diferencial p {
+        font-size: 15px;
+    }
+
+    .read-more {
+        font-size: 14px;
+        width: 140px;
+        height: 40px;
+        margin-bottom: 60px;
+    }
+}
+
+
+
+
+
+@media only screen and (min-width:480px){
+    @media only screen and (max-width:720px) {
+        .sessão-marcas{
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            background-color: var(--black-color);
+           
+        
+        .texto, h1{
+            color: transparent; 
+            text-align: center;
+            font-size: 30px;
+        }
+        
+        .texto p{
+            color: #fff;
+            width: 100%;
+            text-align: center;
+            font-size: 20px;
+            font-weight: normal;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        
+        .primeira-linha{
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            gap: 10px;
+        }
+        
+        .segunda-linha{
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            gap: 10px;
+        }
+        
+        .aston{
+            background-image: url(/imgs/images/imagens_logo/aston.png);
+            width: 200px;
+            height: 250px;
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        
+        .ferrari{
+            background-image: url(/imgs/images/imagens_logo/ferrari.png);
+            width: 250px;
+            height: 250px;
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        
+        .porsche{
+            background-image: url(/imgs/images/imagens_logo/porsche.png);
+            width: 250px;
+            height: 250px;
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        
+        .pagani{
+            background-image: url(/imgs/images/imagens_logo/pagani.png);
+            width: 250px;
+            height: 250px;
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        
+        .bugatti{
+            background-image: url(/imgs/images/imagens_logo/bugatti.png);
+            width: 250px;
+            height: 250px;
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        
+        .lambo{
+            background-image: url(/imgs/images/imagens_logo/lambo.png);
+            width: 250px;
+            height: 250px;
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        
+        .botao_container .more-content{
+            justify-content: center;
+            font-family: var(--font-content);
+            background-color: var(--black-color);
+            border: 2px solid var(--yellow-darker);
+            color: white;
+            padding: 10px 50px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: 0.3s ease, color 0.3s ease;
+            box-shadow: 0 0 30px var(--yellow-darker);
+            margin-bottom: 40px;
+        }
+        
+        .more-content:hover {
+            background-color: var(--yellow-darker);
+            color: var(--black-color);
+        }
+
+    }
+}
+}
+
+/* VISUALIZAÇÃO MOBILE MARCAS */
+@media (max-width: 480px) {
+    .sessão-marcas{
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        background-color: var(--black-color);
+       
+    
+    .texto, h1{
+        color: transparent; 
+        text-align: center;
+        font-size: 20px;
+    }
+    
+    .texto p{
+        color: #fff;
+        width: 100%;
+        text-align: center;
+        font-size: 15px;
+        font-weight: normal;
+        font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+    
+    .primeira-linha{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        gap: 10px;
+    }
+    
+    .segunda-linha{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        gap: 10px;
+    }
+    
+    .aston{
+        background-image: url(/imgs/images/imagens_logo/aston.png);
+        width: 150px;
+        height: 250px;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    
+    .ferrari{
+        background-image: url(/imgs/images/imagens_logo/ferrari.png);
+        width: 150px;
+        height: 250px;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    
+    .porsche{
+        background-image: url(/imgs/images/imagens_logo/porsche.png);
+        width: 150px;
+        height: 250px;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    
+    .pagani{
+        background-image: url(/imgs/images/imagens_logo/pagani.png);
+        width: 250px;
+        height: 250px;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    
+    .bugatti{
+        background-image: url(/imgs/images/imagens_logo/bugatti.png);
+        width: 250px;
+        height: 250px;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    
+    .lambo{
+        background-image: url(/imgs/images/imagens_logo/lambo.png);
+        width: 250px;
+        height: 250px;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    
+    .botao_container .more-content{
+        justify-content: center;
+        font-family: var(--font-content);
+        background-color: var(--black-color);
+        border: 2px solid var(--yellow-darker);
+        color: white;
+        padding: 10px 50px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: 0.3s ease, color 0.3s ease;
+        box-shadow: 0 0 30px var(--yellow-darker);
+        margin-bottom: 40px;
+    }
+    
+    .more-content:hover {
+        background-color: var(--yellow-darker);
+        color: var(--black-color);
+    }
+}
+}
+/* FINAL SESSÃO MARCAS */
+}
