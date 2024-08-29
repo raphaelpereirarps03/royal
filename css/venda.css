@@ -35,10 +35,13 @@ body {
 #fundo {
     width: 50%;
     height: 67%;
-    background-color: aliceblue;
+    background-color: rgb(247, 247, 247);
     margin-top: 8%;
     margin-left: 5%;
     border-radius: 40px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
 }
 
 #fundo img {
@@ -62,7 +65,7 @@ body {
 }
 
 #texto h1 {
-    margin: 0;
+    margin: 20px;
     font-size: 60px;
     font-family: "Plus Jakarta Sans", sans-serif;
 }
@@ -77,7 +80,7 @@ body {
 
 
 .buttons button {
-    background-color: yellow;
+    background-color: #FFC400;
     color: black;
     padding: 10px 20px;
     border: none;
@@ -86,19 +89,21 @@ body {
     margin-top: 150px;
     width: 270px;
     font-size: 30px;
-    font-family: "Orbitron", sans-serif;
+    font-family: "Orbitron", sans-serif;   
+    cursor: pointer;
     
 }
 
 #cta {
-    background-color: yellow;
-    color: black;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     padding: 10px 20px;
-    border: none;
+    border: 2px solid #fff;
     border-radius: 5px;
     margin-top: 20px;
     font-family: "Orbitron", sans-serif;
     font-size: 30px;
+    cursor: pointer;
 }
 
 #popup {
@@ -106,9 +111,8 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: #fff;
-    border: 1px solid #ccc;
-    padding: 20px;
+    background-color: #000000;
+    padding: 0px;
     z-index: 999;
     display:   
  none;
@@ -126,12 +130,8 @@ body {
     display: block !important;
   }
 #meuvideo{
-    
         width: 1000px; 
-        height: 300vh; 
-        position: absolute;
-        top: 10%;
-        left: 10%;
+        position: fixed;
         transform: translate(-50%, -50%);
       
 }
