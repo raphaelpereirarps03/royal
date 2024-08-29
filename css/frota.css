@@ -150,6 +150,7 @@ h1{
     height: 182px;
     object-fit: cover;
     object-position: center;
+    position: relative;
 }
 
 .image-car .porsche-911{
@@ -157,7 +158,108 @@ h1{
     height: 182px;
     object-fit: cover;
     object-position: center;
-    padding-top: 80px;
+    position: relative;
+    top: 40px;
+}
+
+.image-car .porsche-taycan{
+    width: 315px;
+    height: 182px;
+    object-fit: cover;
+    object-position: center;
+    position: relative;
+    top: 40px;
+}
+
+.image-car .aston-1{
+    width: 270px;
+    height: 170px;
+    position: relative;
+    top: 30px;
+    padding-left: 30px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.image-car .aston-2{
+    width: 280px;
+    height: 180px;
+    position: relative;
+    top: 30px;
+    padding-left: 30px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.image-car .aston-3{
+    width: 320px;
+    height: 180px;
+    position: relative;
+    top: 30px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.image-car .lambo-1{
+    width: 270px;
+    height: 150px;
+    left: 20px;
+    top: 40px;
+    margin-bottom: 30px;
+    position: relative;
+    object-fit: cover;
+    object-position: center;
+}
+
+.image-car .lambo-2{
+    width: 300px;
+    height: 180px;
+    position: relative;
+    top: 30px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.image-car .lambo-3{
+    width: 350px;
+    height: 180px;
+    position: relative;
+    top: 30px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.image-car .jaguar-1{
+    width: 270px;
+    height: 150px;
+    left: 20px;
+    top: 50px;
+    margin-bottom: 30px;
+    position: relative;
+    object-fit: cover;
+    object-position: center;
+}
+
+.image-car .jaguar-2{
+    width: 250px;
+    height: 160px;
+    position: relative;
+    top: 50px;
+    left: 30px;
+    margin-bottom: 20px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.image-car .jaguar-3{
+    width: 280px;
+    height: 150px;
+    position: relative;
+    top: 50px;
+    left: 15px;
+    margin-bottom: 30px;
+    object-fit: cover;
+    object-position: center;
 }
 
 .baixo-left{
