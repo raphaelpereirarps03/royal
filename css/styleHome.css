@@ -21,6 +21,7 @@
 
 body {
     overflow-x: hidden;
+    background-color: #E0B604;
 }
 
 /*COMEÇO SESSÃO HOME */
@@ -47,8 +48,8 @@ header {
     height: 100%;
     display: flex;
     align-items: center;
-    width: 450px;
-    justify-content: center;
+    width: 25%;
+    justify-content:space-between;
     margin-left: 30px;
 }
 
@@ -65,7 +66,7 @@ header {
     text-decoration: none;
     color: #fff;
     font-family: var(--font-content);
-    font-size: 20px;
+    font-size: 17px;
     transition: 0.7s ease;
 }
 
@@ -972,6 +973,11 @@ aside {
             cursor: pointer;
             height:75px ;
             width: 75px;
+        }
+
+
+        .mobile-menu {
+            display: none;
         }
 
         .mobile-menu ul{

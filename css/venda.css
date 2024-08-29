@@ -10,6 +10,28 @@ body {
     background-color: #000;
 }
 
+
+.redirect-button {
+    position: absolute;
+    top: 20px; /* Distância do topo da página */
+    left: 20px; /* Distância da esquerda da página */
+  }
+  
+  .redirect-button button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color:#f0c14b;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .redirect-button button:hover {
+    background-color: #e6b800;
+  }
+
 #fundo {
     width: 50%;
     height: 67%;

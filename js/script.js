@@ -68,17 +68,23 @@ function menuShow() {
 }
 
 function menuShow() {
+    console.log('menuShow function called'); // Verifique se esta mensagem aparece no console
+
     let menuMobile = document.querySelector('.mobile-menu');
-    let menuIcon = document.querySelector('.icon-Menu'); // Corrigido o seletor
+    let menuIcon = document.querySelector('.icon-Menu');
     
     if (menuMobile.classList.contains('open')) {
+        console.log('Menu is open, closing it');
         menuMobile.classList.remove('open');
-        menuIcon.src = "imgs/menuHamburguer.png"; // Ícone de hamburguer
+        menuIcon.src = "imgs/menuHamburguer.png"; // Ícone de hambúrguer
     } else {
+        console.log('Menu is closed, opening it');
         menuMobile.classList.add('open');
         menuIcon.src = "imgs/btnClose.png"; // Ícone de fechar
     }
 }
+
+
 
 
 const reviews = document.querySelectorAll('.review-card');
