@@ -42,6 +42,8 @@ header {
     height: 12%;
     background-color: rgba(55, 55, 55, 0.193);
     backdrop-filter: blur(10px);
+    position: fixed;
+    width: 100%;
 }
 
 .nav-right{
@@ -176,7 +178,7 @@ header {
     width: 800px;
     height: 150px;
     position: relative;
-    top: 55%;
+    top: 75%;
     border: 4px solid #fff;
     border-radius: 20px; 
 }
@@ -624,9 +626,15 @@ header {
 
 .btn-right .buy{
     text-decoration: none;
+<<<<<<< HEAD
     background-color: var(--yellow-darker);
     color: var(--black-color);
     height: 30px;
+=======
+    
+    height: 30px;
+    color: #000000;
+>>>>>>> a5e3a4b5e46033bd31bca57fd21824c1c7c9f75f
     font-weight: bold;
     display: flex;
     justify-content: center;
@@ -635,6 +643,7 @@ header {
     font-family: var(--font-content);
     border-radius: 5px;
     font-size: 15px;
+    background-color: #E0B604;
 }
 
 .btn-frota{
